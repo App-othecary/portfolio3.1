@@ -1,5 +1,5 @@
 import Header from "./Header";
-import BeforeAfterSlider from "./before_after_slider_ai";
+// import BeforeAfterSlider from "./before_after_slider_ai";
 import ActiveSectionContextProvider from "./context/active-section-context";
 import Intro from "./intro";
 import Projects from "./projects";
@@ -7,6 +7,7 @@ import SectionDivider from "./section-divider";
 import Services from "./services";
 import Contacts from "./contacts";
 import Pricing from "../(_pricing)/pricing";
+import BlogPost from "./blogpost";
 
 export default function HomePage({ children }: { children: React.ReactNode }) {
   return (
@@ -16,8 +17,10 @@ export default function HomePage({ children }: { children: React.ReactNode }) {
         {children}
         {/* <BeforeAfterSlider/> */}
         <Intro />
+
         <Services />
         <Projects />
+        <BlogPost />
         <Pricing />
         <Contacts />
       </ActiveSectionContextProvider>

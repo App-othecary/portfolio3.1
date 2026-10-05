@@ -1,27 +1,32 @@
 "use client";
 
-import SectionHeading from './section-heading'
-import { motion, } from 'framer-motion'
-import { useSectionInview } from '@/lib/hooks';
+import SectionHeading from "./section-heading";
+import { motion } from "framer-motion";
+import { useSectionInview } from "@/lib/hooks";
 
 export default function Services() {
-  const {ref} =useSectionInview('Services');
+  const { ref } = useSectionInview("Services");
 
   return (
-    <motion.section 
-    ref={ref}
-    className="mb-28 max-w-180 text-center leading-8 sm:mb-40 scroll-mt-26"
-    initial={{ opacity: 0, y: 100 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{delay: 0.175}}
-    id="services"
-    
+    <motion.section
+      ref={ref}
+      className="mb-28 max-w-180 text-center leading-8 sm:mb-40 scroll-mt-26"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.175 }}
+      id="services"
     >
-      <SectionHeading>Our Services</SectionHeading>
-      <p className='text-center max-w:45rem mb-4'>
-        "We can design, build and maintain your website, so that you can focus on your core business. We provide top-notch solutions that help your on-line presence grow.</p>
-        <p className='text-center max-w:45rem mb-4'>From web development to digital marketing, we have the skills and experience to deliver exceptional results. Contact us today to learn more about how we can help you achieve your goals."        </p>
-        
-      </motion.section>
-  )
+      <SectionHeading>My Philosophy</SectionHeading>
+      <p className="text-center max-w:45rem mb-4">
+        Design should spark joy and inspire creativity. I believe in creating
+        designs that are not only visually appealing but also functional and
+        intuitive.
+      </p>
+      <p className="text-center max-w:45rem mb-4">
+        I believe there is a difference between a good design and a great
+        design. A good design is visually appealing, but a great design is one
+        that solves a problem, evokes emotion, and leaves a lasting impression.
+      </p>
+    </motion.section>
+  );
 }
