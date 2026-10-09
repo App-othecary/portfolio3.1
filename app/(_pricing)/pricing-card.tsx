@@ -23,7 +23,7 @@ export default function PricingCard({
   return (
     <motion.div
       ref={ref}
-      viewport={{ once: true }}
+      viewport={{ once: true, amount: 0.5 }}
       style={{
         scale: scale,
         opacity: opacity,

@@ -2,10 +2,10 @@
 
 import { useRef } from "react";
 import Image from "next/image";
-import { projectsData } from "@/lib/data";
+import { blogPostData } from "@/lib/data";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = (typeof blogPostData)[number];
 export default function Project({
   title,
   description,
@@ -28,18 +28,22 @@ export default function Project({
       }}
       className=" group mb-8 sm:mb-12"
     >
-      <section className="max-w-2xl mx-auto p-4 border-black/5 overflow-hidden  
+      <section
+        className="max-w-2xl mx-auto p-4 border-black/5 overflow-hidden  
       sm:pr-8 flex flex-col sm:block relative sm:h-80 rounded-lg 
-      shadow-md hover:bg-mauve-200 transition sm:group-even:pl-8">
-        <div className="pt-4 pb-7 px-5 sm:pl-8 sm:pr-2 sm:pt-10 
+      shadow-md hover:bg-mauve-200 transition sm:group-even:pl-8"
+      >
+        <div
+          className="pt-4 pb-7 px-5 sm:pl-8 sm:pr-2 sm:pt-10 
         max-w-none sm:max-w-1/2 flex flex-col 
         h-auto sm:h-full
-         sm:group-even:ml-80">
+         sm:group-even:ml-80"
+        >
           <h3 className="text-2xl font-semibold ">{title}</h3>
           <p className="mt-2 leading-relaxed">{description}</p>
           <ul className="flex flex-wrap gap-2 mt-4 ">
             {tags.map((tag, index) => (
-              <li           // this lists the techstack items
+              <li // this lists the techstack items
                 key={index}
                 className="inline-block mr-2 rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700 mb-2"
               >

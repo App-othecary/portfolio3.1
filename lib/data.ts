@@ -177,3 +177,26 @@ export const extraServicesData = [
     imageUrl: stocklist_desktop,
   },
 ] as const;
+export const blogPostData = [
+  {
+    title: "The Bookmark",
+    description:
+      "I created a service where users could buy and sell their used books, by looking at a users purchase habbits we could then suggestion bookclub friends",
+    tags: ["React", "Next.js", "Firebase", "Tailwind", "Vercel", "Github"],
+    imageUrl: bookmark_page_banner,
+  },
+  {
+    title: "Precision HD Laser",
+    description:
+      "An online shop where clients can order precision cut metal parts for their projects.",
+    tags: ["Figma", "React", "TypeScript", "Next.js", "Tailwind"],
+    imageUrl: HD_Precision,
+  },
+  {
+    title: "StockList",
+    description:
+      "An App for sales staff to track inventory live and share information with managers.",
+    tags: ["Firebase", "Flutter", "Dart", "VS Code"],
+    imageUrl: stocklist_desktop,
+  },
+] as const;

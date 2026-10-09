@@ -26,7 +26,7 @@ export default function Pricing() {
       <SectionHeading>Pricing</SectionHeading>
 
       <p className="text-center max-w:45 rem m-4">
-        Weather you're just getting started or need a website to grow with your
+        Whether you're just getting started or need a website to grow with your
         business.
       </p>
       <main className=" md:col-span-3 cardPrimaryColor rounded-2xl shadow-sm border border-gray-200">
