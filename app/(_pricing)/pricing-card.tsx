@@ -39,7 +39,7 @@ export default function PricingCard({
           className="pt-2 pb-2 px-5 
                          flex flex-col 
                         h-100 
-                        
+                        sm:h-auto
                          lg:h-150
                         "
         >
